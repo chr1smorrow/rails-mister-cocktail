@@ -1,0 +1,13 @@
+<div class="container text-center">
+  <h1>New Cocktail</h1>
+  <hr>
+  <div class="col-xs-12 col-sm-4 col-sm-offset-4 text-center">
+    <div class="form-group">
+    <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name, label: false, placeholder: "eg. Amaretto Sour",class: "form-control" %>
+      <hr>
+      <%= f.submit "NEW" , class: "btn btn-primary" %>
+    <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container text-center">
+  <h1>New Dose</h1>
+  <hr>
+    <div class="form-group">
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description, placeholder: "eg. 100ml",class: "form-control" %>
+      <%= f.association :ingredient %>
+      <hr>
+      <%= f.submit "Submit" , class: "btn btn-primary" %>
+    <% end %>
+    </div>
+  </div>
+  <%= link_to "List Cocktails", cocktails_path %>
+</div>
